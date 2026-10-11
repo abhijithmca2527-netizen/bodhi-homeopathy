@@ -38,7 +38,7 @@ include 'includes/header.php';
                     </div>
                 </div>
                 <div class="about-image-content">
-                    <img src="images/banner1.jpg" alt="Legacy Image" class="pro-rounded-img">
+                    <img src="assets/images/banner1.jpg" alt="Legacy Image" class="pro-rounded-img">
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ include 'includes/header.php';
     <section class="container doctor-intro-section">
         <div class="chairman-card">
             <div class="chairman-img">
-                <img src="images/chairman.png" alt="Dr. Shybu Raj">
+                <img src="assets/images/chairman.png" alt="Dr. Shybu Raj">
             </div>
             <div class="chairman-text">
                 <h2 class="title-line">Chief Physician's Message</h2>
