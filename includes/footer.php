@@ -1,3 +1,4 @@
+<?php if (!isset($isAuthPage) || !$isAuthPage): ?>
 <footer class="main-footer">
 
     <div class="footer-container">
@@ -45,17 +46,17 @@
 
             <ul class="footer-links">
 
-                <li><a href="index.php"><i class="fas fa-chevron-right"></i> Home</a></li>
+                <li><a href="<?php echo BASE_URL; ?>index.php"><i class="fas fa-chevron-right"></i> Home</a></li>
 
-                <li><a href="about.php"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                <li><a href="<?php echo BASE_URL; ?>about.php"><i class="fas fa-chevron-right"></i> About Us</a></li>
 
-                <li><a href="treatment.php"><i class="fas fa-chevron-right"></i> Treatments</a></li>
+                <li><a href="<?php echo BASE_URL; ?>treatment.php"><i class="fas fa-chevron-right"></i> Treatments</a></li>
 
-                <li><a href="enquiry.php"><i class="fas fa-chevron-right"></i> Enquiry</a></li>
+                <li><a href="<?php echo BASE_URL; ?>products.php"><i class="fas fa-chevron-right"></i> Products</a></li>
 
-                <li><a href="contact.php"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                <li><a href="<?php echo BASE_URL; ?>contact.php"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
 
-                <li><a href="book.php"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
+                <li><a href="<?php echo BASE_URL; ?>book.php"><i class="fas fa-chevron-right"></i> Book Appointment</a></li>
 
             </ul>
 
@@ -73,6 +74,8 @@
     </div>
 
 </footer>
+<?php endif; ?>
 
+<script src="<?php echo BASE_URL; ?>assets/js/script.js?v=1.0.2"></script>
 </body>
 </html> 
