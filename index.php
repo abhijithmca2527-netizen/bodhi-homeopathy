@@ -9,21 +9,21 @@ include 'includes/header.php';
                 <div class="hero-overlay">
                     <h1>Authentic Homeopathy</h1>
                     <p>Experience holistic healing from 4th generation experts.</p>
-                    <a href="treatment.html" class="hero-btn">OUR TREATMENTS</a>
+                    <a href="treatment.php" class="hero-btn">OUR TREATMENTS</a>
                 </div>
             </div>
             <div class="slide slide2">
                 <div class="hero-overlay">
                     <h1>120 Years of Trust</h1>
                     <p>Rooted in tradition, powered by modern medical science.</p>
-                    <a href="about.html" class="hero-btn">LEARN OUR HISTORY</a>
+                    <a href="about.php" class="hero-btn">LEARN OUR HISTORY</a>
                 </div>
             </div>
             <div class="slide slide3">
                 <div class="hero-overlay">
                     <h1>Natural Care for All</h1>
                     <p>Safe, effective, and side-effect-free solutions for your family.</p>
-                    <a href="book.html" class="hero-btn">BOOK APPOINTMENT</a>
+                    <a href="products.php" class="hero-btn">EXPLORE PHARMACY</a>
                 </div>
             </div>
         </div>
@@ -58,43 +58,43 @@ include 'includes/header.php';
         <div class="about-box">
             <h2>About Bodhi Speciality Hospital</h2>
             <p>Bodhi Homeopathic Speciality Clinic is one of the leading homeopathy clinics in Kerala and Pathanamthitta. Dr. Shybu Raj is a promising qualified doctor practicing Homeopathy in Classical, Constitutional and Authentic way.</p>
-            <a href="about.html" class="read-more">Read More</a>
+            <a href="about.php" class="read-more">Read More</a>
         </div>
 
         <div class="row">
             <div class="col">
                 <div class="col-icon"><i class="fas fa-microscope"></i></div>
                 <h3>About Homeopathy</h3>
-                <img src="images/a1.png" alt="Homeopathy">
+                <img src="assets/images/a1.png" alt="Homeopathy">
                 <p>Homeopathy is a medical science developed by a German physician...</p>
-                <a href="about.html" class="read-more">Read More</a>
+                <a href="about.php" class="read-more">Read More</a>
             </div>
             <div class="col">
                 <div class="col-icon"><i class="fas fa-leaf"></i></div>
                 <h3>Why Bodhi</h3>
-                <img src="images/why.webp" alt="Why Bodhi">
+                <img src="assets/images/why.webp" alt="Why Bodhi">
                 <p>Bodhi Clinic is committed to provide the best possible treatments...</p>
-                <a href="about.html" class="read-more">Read More</a>
+                <a href="about.php" class="read-more">Read More</a>
             </div>
             <div class="col">
                 <div class="col-icon"><i class="fas fa-stethoscope"></i></div>
                 <h3>Treatments</h3>
-                <img src="images/t1.png" alt="Treatments">
+                <img src="assets/images/t1.png" alt="Treatments">
                 <p>Treatment in Homeopathy differs from other ways of treatments...</p>
-                <a href="treatment.html" class="read-more">Read More</a>
+                <a href="treatment.php" class="read-more">Read More</a>
             </div>
         </div>
 
         <div class="chairman-container">
             <div class="chairman-card">
                 <div class="chairman-img">
-                    <img src="images/chairman.png" alt="Chairman">
+                    <img src="assets/images/chairman.png" alt="Chairman">
                 </div>
                 <div class="chairman-text">
                     <h2 class="title-line">Chairman's Message</h2>
                     <p class="dr-name">Dr. Shybu Raj</p>
                     <p class="msg-content">"My medical profession started with the passion to make lives. I strongly felt I can make greater impact on people’s health and lives by founding an institution then being a singular physician. Bodhi Homeopathic Speciality Clinic is born out of this intense commitment."</p>
-                    <a href="about.html" class="view-btn">View More</a>
+                    <a href="about.php" class="view-btn">View More</a>
                 </div>
             </div>
         </div>
