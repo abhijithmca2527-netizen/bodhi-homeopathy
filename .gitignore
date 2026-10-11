@@ -1,0 +1,20 @@
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+
+# Backups and SQL dumps
+backup/*.sql
+*.sql
+*.bak
+*.tmp
+
+# Logs
+logs/*.log
+*.log
+
+# OS & Editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
