@@ -1,0 +1,297 @@
+/* Auth CSS - Simplified and Professional Styles for Authentication Pages */
+
+:root {
+    --auth-primary: #4F6F52;         /* Dark natural green */
+    --auth-primary-dark: #355E3B;    /* Deep green for headings */
+    --auth-primary-light: #EEF6EF;
+    --auth-secondary: #E79A32;       /* Subtle gold/orange accent */
+    --auth-bg: #FAF9F6;              /* Very light warm/neutral background */
+    --auth-text: #555;
+    --auth-black: #222;
+    --auth-border: #dcdcdc;
+    --auth-radius: 8px;              /* Professional sharp rounded corners */
+    --auth-transition: .25s ease;
+    --auth-shadow: 0 8px 24px rgba(53, 94, 59, 0.05); /* Soft, subtle shadow */
+}
+
+.auth-section {
+    padding: 30px 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--auth-bg);
+    box-sizing: border-box;
+}
+
+.auth-logo-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.auth-logo-wrapper img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.auth-container {
+    width: 90%;
+    max-width: 420px; /* Compact width for desktop */
+    margin: auto;
+}
+
+.auth-card {
+    background: #ffffff;
+    padding: 35px 30px; /* Reasonable padding */
+    border-radius: var(--auth-radius);
+    box-shadow: var(--auth-shadow);
+    border: 1px solid rgba(79, 111, 82, 0.08);
+    position: relative;
+    width: 100%;
+}
+
+/* Bodhi branding accent stripe at top of card */
+.auth-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--auth-primary), var(--auth-secondary));
+    border-top-left-radius: var(--auth-radius);
+    border-top-right-radius: var(--auth-radius);
+}
+
+.auth-card h2 {
+    text-align: center;
+    font-size: 24px; /* Scaled down for professional look */
+    color: var(--auth-primary-dark);
+    margin-bottom: 6px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: var(--auth-text);
+    margin-bottom: 24px;
+    font-size: 13.5px;
+    line-height: 1.4;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Compact spacing */
+}
+
+.form-group-pro {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.form-group-pro label {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--auth-black);
+}
+
+.form-group-pro input,
+.form-group-pro select,
+.form-group-pro textarea {
+    padding: 10px 14px; /* Tighter padding for inputs */
+    border-radius: 6px;
+    border: 1px solid var(--auth-border);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    transition: var(--auth-transition);
+    background: #ffffff;
+    width: 100%;
+    color: var(--auth-black);
+}
+
+/* Styled Inputs Focus */
+.form-group-pro input:focus,
+.form-group-pro select:focus,
+.form-group-pro textarea:focus {
+    border-color: var(--auth-primary);
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 111, 82, 0.1);
+}
+
+/* Disable native Edge/IE/Chromium password reveal button so only custom button shows */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none !important;
+}
+input::-webkit-contacts-auto-fill-button,
+input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+}
+
+/* Password Eye Button Styling - Positioned INSIDE the field */
+.password-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-input-wrapper input {
+    padding-right: 42px; /* space for the eye icon button */
+}
+
+.toggle-password {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: var(--auth-transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password:hover {
+    transform: translateY(-50%) !important; /* Prevent global hover translate conflicts */
+    color: var(--auth-primary);
+}
+
+/* Layout header for password containing forgot link */
+.label-wrapper-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.forgot-link {
+    font-size: 11.5px;
+    color: var(--auth-primary);
+    font-weight: 500;
+    transition: var(--auth-transition);
+}
+
+.forgot-link:hover {
+    color: var(--auth-primary-dark);
+    text-decoration: underline;
+}
+
+/* Help text styling */
+.form-help {
+    font-size: 11px;
+    color: #777;
+    margin-top: 2px;
+    line-height: 1.3;
+}
+
+/* Auth Submit Button - Premium Orange/Gold matching the site */
+.btn-auth-submit {
+    background: var(--auth-secondary);
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 12px rgba(231, 154, 50, 0.15);
+    transition: var(--auth-transition);
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.btn-auth-submit:hover {
+    background: var(--auth-primary); /* Transition to green on hover */
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(79, 111, 82, 0.2);
+}
+
+.btn-auth-submit:active {
+    transform: translateY(0);
+}
+
+/* Switch link beneath forms */
+.auth-switch {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 15px;
+    color: var(--auth-text);
+}
+
+.auth-switch a {
+    color: var(--auth-primary);
+    font-weight: 600;
+    transition: var(--auth-transition);
+}
+
+.auth-switch a:hover {
+    color: var(--auth-primary-dark);
+    text-decoration: underline;
+}
+
+/* Alert Boxes Styling */
+.alert {
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.alert i {
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.alert-danger {
+    background: #fdf2f2;
+    color: #9b1c1c;
+    border: 1px solid #fbd5d5;
+}
+
+.alert-success {
+    background: #f3faf7;
+    color: #03543f;
+    border: 1px solid #def7ec;
+}
+
+.alert-info {
+    background: #f0f7ff;
+    color: #1e429f;
+    border: 1px solid #e1effe;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .auth-section {
+        padding: 20px 0;
+    }
+    .auth-card {
+        padding: 25px 20px;
+    }
+    .auth-card h2 {
+        font-size: 22px;
+    }
+}
